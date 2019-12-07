@@ -4,7 +4,7 @@ import sys
 import threading
 
 IP = '192.168.0.116'
-PORT = 8201
+PORT = 82201
 username = input("Enter your name: ")
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 client_socket.connect((IP, PORT))
@@ -27,6 +27,7 @@ while True:
     # #    print(message.decode('utf-8'))
     # msg = input('{}-> '.format(username))
     # if msg:
+    
     #     client_socket.send(bytes(username + "->" + msg, 'utf-8'))
 
     try:
